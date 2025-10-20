@@ -167,7 +167,7 @@ SELECT
   CASE WHEN MOD(n, 200)=0 THEN CONCAT('Control masivo', n) END             AS observaciones -- cada 200, nota
 FROM seq200k;
 
-
+SET @tag = CONVERT(@tag USING utf8);
 
 -- paso 4 
 CREATE TEMPORARY TABLE chips200k AS
