@@ -6,7 +6,7 @@ DROP USER IF EXISTS 'vet_read'@'localhost';
 CREATE USER 'vet_read'@'localhost' IDENTIFIED BY 'VetRead2025!';
 GRANT SELECT ON vet.* TO 'vet_read'@'localhost';
 
--- Usuario que puede insertar mascotas y microchips
+-- Usuario que puede insertar mascotas
 DROP USER IF EXISTS 'vet_writer'@'localhost';
 CREATE USER 'vet_writer'@'localhost' IDENTIFIED BY 'VetWrite2025!';
 GRANT SELECT, INSERT ON vet.mascota TO 'vet_writer'@'localhost';
