@@ -1,3 +1,4 @@
+USE vet;
 -- TABLAS CATALOGO
 -- Tabla de nombres para los animales: 
 CREATE TABLE IF NOT EXISTS cat_nombre_mascota (
